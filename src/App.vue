@@ -68,16 +68,17 @@ function goContact() {
       <Home v-if="onScreenHome"></Home>
       <Gallery v-if="onScreenGallery"></Gallery>
       <Contact v-if="onScreenContact"></Contact>
-      <h2>Nos dernières activités</h2>
-      <br>
-      <v-carousel hide-delimiter-background :show-arrows="false" cycle>
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"></v-carousel-item>
+      <div v-if="onScreenHome">
+        <h2>Nos dernières activités</h2>
+        <br>
+        <v-carousel hide-delimiter-background :show-arrows="false" cycle>
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"></v-carousel-item>
 
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"></v-carousel-item>
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"></v-carousel-item>
 
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"></v-carousel-item>
-      </v-carousel>
-
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"></v-carousel-item>
+        </v-carousel>
+      </div>
 
 
     </v-main>
@@ -87,5 +88,9 @@ function goContact() {
 <style>
 html {
   background: linear-gradient(25deg, #370617 20%, #9D0208);
+}
+
+h3 {
+  text-align: center;
 }
 </style>
