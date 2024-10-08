@@ -22,29 +22,19 @@ const vuetify = createVuetify({
                 'font-family': '"Quattrocento", serif',
             }
         },
-        VNavigationDrawer: {
-            style: {
-                'background': 'inherit',
-            }
-        },
+
         VBtn: {
+
+            variant: 'elevated',
+            rounded: true,
             style: {
-                'background-image': 'linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%)',
-                'margin': '10px',
-                'padding': '15px 45px',
-                'text-align': 'center',
-                'text-transform': 'uppercase',
-                'transition': '0.5s',
-                'background-size': '200% auto',
-                'color': 'white',
-                'box-shadow': '0 0 20px #eee',
-                'border-radius': '10px',
-                'display': 'block',
+                'margin-bottom': '20px',
+
             },
 
-
         },
-    },
+
+    }
 })
 
 

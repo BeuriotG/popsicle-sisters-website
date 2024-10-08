@@ -35,7 +35,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, 719px);
-    margin-left: 20px;
+    margin: auto;
 }
 
 .video {

@@ -58,11 +58,14 @@ function goContact() {
 <template>
   <v-app>
     <v-main>
-      <v-navigation-drawer location="right" floating>
-        <v-list-item><v-btn @click="goHome">Accueil</v-btn></v-list-item>
-        <v-list-item><v-btn @click="goGallery">Galerie</v-btn></v-list-item>
-        <v-list-item><v-btn @click="goContact">Contact</v-btn></v-list-item>
-      </v-navigation-drawer>
+
+      <v-container fluid>
+        <div style="position: absolute; top: 0; right: 0">
+          <v-btn @click="goHome">Accueil</v-btn>
+          <v-btn @click="goGallery">Galerie</v-btn>
+          <v-btn @click="goContact">Contact</v-btn>
+        </div>
+      </v-container>
 
 
       <Home v-if="onScreenHome"></Home>
