@@ -93,6 +93,10 @@ html {
   background: linear-gradient(25deg, #370617 20%, #9D0208);
 }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
   text-align: center;
 }

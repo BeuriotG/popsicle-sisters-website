@@ -20,7 +20,21 @@ const vuetify = createVuetify({
                 'background-attachment': 'fixed',
                 'color': 'rgb(189, 177, 177)',
                 'font-family': '"Quattrocento", serif',
+            },
+            VContainer: {
+                style: {
+                    'background': 'inherit',
+                },
+                VSheet: {
+
+                    style: {
+                        'background': 'inherit',
+                        'color': 'inherit',
+                        'text-align': 'center',
+                    }
+                },
             }
+
         },
 
         VBtn: {
