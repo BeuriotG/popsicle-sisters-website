@@ -37,7 +37,7 @@
 
 </template>
 
-<style>
+<style scoped>
 .grid {
     display: grid;
     grid-gap: 10px;
@@ -48,5 +48,9 @@
 .video {
     text-align: center;
     margin-top: 2em;
+}
+
+img {
+    max-height: 600px;
 }
 </style>

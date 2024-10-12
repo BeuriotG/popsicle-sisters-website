@@ -6,8 +6,8 @@
 
 <template>
 
-    <NavMenu></NavMenu>
-    <h1>POPSICLE SISTERS</h1>
+
+
     <br>
     <div class="img">
         <img src="/src/components/img/trio_presentation.jpg" alt="Présentation du trio" title="Présentation du trio">
@@ -26,19 +26,17 @@
 
 </template>
 
-<style>
-h1 {
-    text-align: center;
-    font-size: 5em;
-}
+<style scoped>
+
 
 h2 {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 img {
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .img {
@@ -47,6 +45,7 @@ img {
 
 .presentation_text_div {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .presentation_text_p {

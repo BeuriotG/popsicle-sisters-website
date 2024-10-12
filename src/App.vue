@@ -6,6 +6,7 @@ import Contact from '../composants/Contact.vue';
 import Gallery from '../composants/Gallery.vue';
 
 
+
 const props = defineProps({
   onScreenHome:
   {
@@ -59,13 +60,22 @@ function goContact() {
   <v-app>
     <v-main>
 
-      <v-container fluid>
-        <div style="position: absolute; top: 0; right: 0">
+      <v-toolbar
+      image="src\components\bg_img\Red_Roses_Beautiful_Background.jpg"
+      extended>
+        <img src="/src/components/icons/PS_logo.png" alt=""  width="128px">
+
+      <v-toolbar-title
+      text="POPSICLE SISTERS"
+
+      
+      ></v-toolbar-title>
+        <div style="position: absolute; top: 0; right: 20em">
           <v-btn class="no-hover" @click="goHome">Accueil</v-btn>
           <v-btn class="no-hover" @click="goGallery">Galerie</v-btn>
           <v-btn class="no-hover" @click="goContact">Contact</v-btn>
         </div>
-      </v-container>
+      </v-toolbar>
 
 
       <Home v-if="onScreenHome"></Home>
@@ -91,10 +101,13 @@ function goContact() {
 <style>
 html {
   background: linear-gradient(25deg, #370617 20%, #9D0208);
+  background-image: url("src/components/bg_img/9744344ec04004f7fb5aeb1421befd95.jpg");
+
 }
 
 h1 {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 h3 {
@@ -105,7 +118,9 @@ h3 {
 </style>
 
 <style scoped>
-
+.no-hover {
+  margin-right:3em;
+}
 .no-hover:hover :deep(.v-btn__overlay) {
   background-color: inherit;
   opacity: 0;

@@ -17,7 +17,7 @@ function onSubmit(){
     <v-container class="fill-height">
         <v-row no-gutters>
             <v-col>
-                <v-sheet>
+                <v-sheet height="500px">
                     <h2>Nos coordonnées</h2>
                     <p>mail: popsisclesisterstrio@gmail.com</p>
                     <h2>Nos réseaux</h2>
@@ -35,7 +35,7 @@ function onSubmit(){
                 </v-sheet>
             </v-col>
             <v-col>
-                <v-sheet>
+                <v-sheet height="500px">
                     <h2>Nos prestations</h2>
                     <h3>Mariages</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nisi hic cupiditate earum
@@ -57,7 +57,7 @@ function onSubmit(){
                         doloribus.</p>
                 </v-sheet>
             </v-col> <v-col>
-                <v-sheet>
+                <v-sheet height="500px">
                     <h2>Nos honoraires</h2>
                     <p>Contactez-nous pour établir un devis de prestation sur mesure.</p>
                     <v-btn
@@ -81,11 +81,10 @@ function onSubmit(){
 a {
     text-decoration: none;
     color: inherit;
-}
-
-a {
     font-size: 1.3em;
 }
+
+
 </style>
 
 <style scoped>
@@ -93,6 +92,13 @@ a {
 .no-hover:hover :deep(.v-btn__overlay) {
   background-color: inherit;
   opacity: 0;
+}
+
+h2 {
+    padding-top: 1em;
+}
+h3 {
+    margin-top: 2em;;
 }
 
 </style>
