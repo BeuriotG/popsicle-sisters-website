@@ -16,7 +16,7 @@ const vuetify = createVuetify({
     defaults: {
         VApp: {
             style: {
-                'background': 'linear-gradient(25deg, #370617 20%, #9D0208)',
+                'background': 'inherit',
                 'background-attachment': 'fixed',
                 'color': 'rgb(189, 177, 177)',
                 'font-family': '"Quattrocento", serif',
@@ -29,10 +29,15 @@ const vuetify = createVuetify({
 
                     style: {
                         'background': 'inherit',
-                        'color': 'inherit',
+                        color: 'inherit',
                         'text-align': 'center',
                     }
                 },
+                VTextarea: {
+                    style: {
+                        'background-color': 'white',
+                    }
+                }
             }
 
         },
@@ -43,6 +48,9 @@ const vuetify = createVuetify({
             rounded: true,
             style: {
                 'margin-bottom': '20px',
+                'background': 'inherit',
+                'cursor': 'pointer',
+                'color': 'inherit',
 
             },
 

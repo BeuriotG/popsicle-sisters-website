@@ -1,5 +1,11 @@
 <script setup lang="ts">
 
+function onSubmit(){
+    
+    window.open('mailto:popsisclesisterstrio@gmail.com')
+    window.close
+}
+
 
 
 </script>
@@ -13,19 +19,18 @@
             <v-col>
                 <v-sheet>
                     <h2>Nos coordonnées</h2>
-                    <p>Tel: 06.00.00.00.00</p>
-                    <p>mail: mail.contact@gmail.com</p>
+                    <p>mail: popsisclesisterstrio@gmail.com</p>
                     <h2>Nos réseaux</h2>
-                    <span>
-                        <a href="https://www.instagram.com/">
+                    
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                             Instagram </a>
                         <img src="/src/components/icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
                             alt="" width="40px">
-                    </span>
+                    
                     <br>
-                    <a href="https://fr-fr.facebook.com/">Facebook</a> <img
-                        src="/src/components/icons/vecteezy_social-media-facebook-instagram-youtube-pinterest-tiktok-3d_35575585.png"
-                        alt="" width="35px">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a> <img
+                        src="/src/components/icons/youtube.png"
+                        alt="" width="25px">
 
                 </v-sheet>
             </v-col>
@@ -55,10 +60,20 @@
                 <v-sheet>
                     <h2>Nos honoraires</h2>
                     <p>Contactez-nous pour établir un devis de prestation sur mesure.</p>
+                    <v-btn
+                    class="no-hover"
+                      @click="onSubmit">
+                        Envoyez-nous un petit mail !
+                    </v-btn>
                 </v-sheet>
+            
+            
             </v-col>
+            
         </v-row>
     </v-container>
+
+
 
 </template>
 
@@ -71,4 +86,13 @@ a {
 a {
     font-size: 1.3em;
 }
+</style>
+
+<style scoped>
+
+.no-hover:hover :deep(.v-btn__overlay) {
+  background-color: inherit;
+  opacity: 0;
+}
+
 </style>
