@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import Home from '../composants/Home.vue';
 import Contact from '../composants/Contact.vue';
 import Gallery from '../composants/Gallery.vue';
+import Presta from '../composants/Presta.vue';
 
 
 
@@ -13,13 +14,16 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
-
+  onScreenPresta:
+  {
+    type: Boolean,
+    default: false,
+  },
   onScreenGallery:
   {
     type: Boolean,
     default: false,
   },
-
   onScreenContact:
   {
     type: Boolean,
@@ -28,6 +32,7 @@ const props = defineProps({
 })
 
 const onScreenHome = ref(props.onScreenHome)
+const onScreenPresta = ref(props.onScreenPresta)
 const onScreenGallery = ref(props.onScreenGallery)
 const onScreenContact = ref(props.onScreenContact)
 
@@ -35,18 +40,28 @@ const onScreenContact = ref(props.onScreenContact)
 function goHome() {
   onScreenHome.value = true
   onScreenContact.value = false
+  onScreenPresta.value = false
+  onScreenGallery.value = false
+}
+
+function goPresta() {
+  onScreenHome.value = false
+  onScreenContact.value = false
+  onScreenPresta.value = true
   onScreenGallery.value = false
 }
 
 function goGallery() {
   onScreenHome.value = false
   onScreenContact.value = false
+  onScreenPresta.value = false
   onScreenGallery.value = true
 }
 
 function goContact() {
   onScreenHome.value = false
   onScreenContact.value = true
+  onScreenPresta.value = false
   onScreenGallery.value = false
 }
 
@@ -59,70 +74,100 @@ function goContact() {
 <template>
   <v-app>
     <v-main>
+      <img src="/src/components/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo">
 
       <v-toolbar
-      image="src\components\bg_img\Red_Roses_Beautiful_Background.jpg"
-      extended>
-        <img src="/src/components/icons/PS_logo.png" alt=""  width="128px">
-
-      <v-toolbar-title
-      text="POPSICLE SISTERS"
-
+      rounded>
       
-      ></v-toolbar-title>
+      <h1 class="h1_banner"><span class="h1_banner_extra">POPSICLE</span> SISTERS</h1>
+
         <div style="position: absolute; top: 0; right: 20em">
           <v-btn class="no-hover" @click="goHome">Accueil</v-btn>
+          <v-btn class="no-hover" @click="goPresta">Prestation</v-btn>
           <v-btn class="no-hover" @click="goGallery">Galerie</v-btn>
           <v-btn class="no-hover" @click="goContact">Contact</v-btn>
         </div>
+
       </v-toolbar>
 
 
       <Home v-if="onScreenHome"></Home>
       <Gallery v-if="onScreenGallery"></Gallery>
+      <Presta v-if="onScreenPresta"></Presta>
       <Contact v-if="onScreenContact"></Contact>
-      <div v-if="onScreenHome">
-        <h2>Nos dernières activités</h2>
-        <br>
-        <v-carousel hide-delimiter-background :show-arrows="false" cycle>
-          <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
-
-          <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
-
-          <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
-        </v-carousel>
-      </div>
-
-
+      
     </v-main>
   </v-app>
 </template>
 
 <style>
+
 html {
-  background: linear-gradient(25deg, #370617 20%, #9D0208);
-  background-image: url("src/components/bg_img/9744344ec04004f7fb5aeb1421befd95.jpg");
+  background: #5c0101;
 
 }
 
 h1 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+}
+
+h2 {
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
 }
 
 h3 {
   text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
+.h1_banner {
+  margin-left: 6em;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.h1_banner_extra {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+
+.icon_logo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.presentation_text_div {
+    text-align: center;
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.text_center {
+    margin: auto;
+    max-width: 21em;
+}
 
 </style>
 
 <style scoped>
 .no-hover {
   margin-right:3em;
+  font-family: "Cormorant Garamond", serif;
 }
 .no-hover:hover :deep(.v-btn__overlay) {
   background-color: inherit;
   opacity: 0;
 }
+
+
 </style>
