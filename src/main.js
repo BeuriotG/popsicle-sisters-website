@@ -48,6 +48,7 @@ const vuetify = createVuetify({
             VContainer: {
                 style: {
                     'background': 'inherit',
+                    'width': 'auto',
                 },
                 VSheet: {
 

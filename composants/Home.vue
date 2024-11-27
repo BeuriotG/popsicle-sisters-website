@@ -5,15 +5,15 @@
 </script>
 
 <template>
-
-    <div class="img">
-        <img src="/src/components/img/trio_presentation.jpg" alt="Présentation du trio" title="Présentation du trio">
-    </div>
+    <v-img
+    src="/src/components/img/trio_presentation.jpg">
+    </v-img>
+<v-container>
     <div class="div_carousel">
         <h2>QUI SOMMES-NOUS ?</h2>
 
             <div class="presentation_text_div">
-                <p class="text_center">
+                <p>
                     Nous sommes les Popsicle Sisters, un trio vocal
                     swing/jazz. Nous vous invitons dans notre univers
                     retro, où se mêlent chants d’après-guerre et
@@ -22,7 +22,7 @@
                     mode du swing ! </p>
             </div>
 
-    
+
         <h2>Nos dernières activités</h2>
             <br>
             <v-carousel hide-delimiter-background :show-arrows="false" cycle>
@@ -33,21 +33,29 @@
             <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
             </v-carousel>
     </div>
+
+</v-container>
 </template>
 
 <style scoped>
 
-h2 {
-    background-color: transparent;
-    color: black;
-}
-img {
-    max-height: 600px;
-    margin-top: 1em;
+h1 {
+    text-align: center;
 }
 
-.img {
+h2 {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  color: black;
+}
+
+
+.presentation_text_div {
     text-align: center;
+    color: black;
+    padding-left: 25%;
+    padding-right: 25%
 }
 
 

@@ -19,11 +19,10 @@ function onSubmit(){
             <v-col>
             <h1>Contact</h1>
         </v-col>
-        </v-row>
-    
+        </v-row> 
         <v-row>
             <v-col>
-                <v-sheet height="500px">
+                <v-sheet >
                     <h2>Nos coordonnées</h2>
                     <p>popsisclesisterstrio@gmail.com</p>
                     <h2>Nos réseaux</h2>
@@ -65,19 +64,15 @@ a {
 
 <style scoped>
 
-.no-hover:hover :deep(.v-btn__overlay) {
-  background-color: inherit;
-  opacity: 0;
+h1 {
+    text-align: center;
 }
+
 
 h2 {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     background-color: transparent;
 }
 
-h3 {
-    margin-top: 2em;
-    background-color: transparent;
-}
 
 </style>

@@ -74,21 +74,23 @@ function goContact() {
 <template>
   <v-app>
     <v-main>
-      <img src="/src/components/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo">
+      <img src="/src/components/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo"></img>
+      
 
       <v-toolbar
       rounded>
       
-      <h1 class="h1_banner"><span class="h1_banner_extra">POPSICLE</span> SISTERS</h1>
+      <h1><span class="h1_cormorant">POPSICLE</span> SISTERS</h1>
 
-        <div style="position: absolute; top: 0; right: 20em">
-          <v-btn class="no-hover" @click="goHome">Accueil</v-btn>
-          <v-btn class="no-hover" @click="goPresta">Prestation</v-btn>
-          <v-btn class="no-hover" @click="goGallery">Galerie</v-btn>
-          <v-btn class="no-hover" @click="goContact">Contact</v-btn>
+      <div class="buttons" >
+          <v-btn size="small" class="no-hover" @click="goHome">Accueil</v-btn>
+          <v-btn size="small" class="no-hover" @click="goPresta">Prestation</v-btn>
+          <v-btn size="small" class="no-hover" @click="goGallery">Galerie</v-btn>
+          <v-btn size="small" class="no-hover" @click="goContact">Contact</v-btn>
         </div>
-
       </v-toolbar>
+
+
 
 
       <Home v-if="onScreenHome"></Home>
@@ -104,38 +106,6 @@ function goContact() {
 
 html {
   background: #5c0101;
-
-}
-
-h1 {
-  text-align: center;
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 500;
-}
-
-h2 {
-  text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.8); */
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 500;
-}
-
-h3 {
-  text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.8); */
-}
-
-.h1_banner {
-  margin-left: 6em;
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 500;
-  font-size: 3em;
-}
-
-.h1_banner_extra {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 200;
-  font-size: 1.1em;
 }
 
 .icon_logo {
@@ -146,27 +116,77 @@ h3 {
   width: 200px;
 }
 
-.presentation_text_div {
-    text-align: center;
-    color: black;
-    /* background-color: rgba(0, 0, 0, 0.8); */
+.buttons {
+  position: absolute;
+  top: 3.5%;
+  right: 5%;
+ 
 }
 
-.text_center {
-    margin: auto;
-    max-width: 21em;
+@media(max-width: 430px){
+  .icon_logo {
+    position: absolute;
+    top: 4em;
+    width: 50px;
+  }
+
+  .buttons {
+     position: absolute;
+     top:-20%;
+     right: 0;
+
+  }
+
+
+
 }
 
 </style>
 
 <style scoped>
+
+h1 {
+  margin-left: 6em;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.h1_cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
 .no-hover {
   margin-right:3em;
   font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
 }
 .no-hover:hover :deep(.v-btn__overlay) {
   background-color: inherit;
   opacity: 0;
+}
+
+@media(max-width: 430px){
+  .no-hover {
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+  margin-left: 3.5em;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: -15px;
+}
+
+.h1_cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
 }
 
 
