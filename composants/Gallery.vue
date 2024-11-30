@@ -32,15 +32,14 @@ const photos = [
 
 
   <v-container fluid >
-    <v-row  >
+    <v-row justify="center" align="center" >
       <v-col
  
         v-for="(photo, index) in photos"
         :key="index"
-        cols="11"
-        sm="6"
-        md="4"
-        lg="3"
+         cols="12" md="6" lg="5" 
+         class="d-flex justify-center"
+      
       >
         <v-img
           :src="photo"
@@ -48,6 +47,7 @@ const photos = [
           alt="Photo"
           cover
         ></v-img>
+        
       </v-col>
     </v-row>
   </v-container>
@@ -64,6 +64,10 @@ h1 {
 .video {
     margin-top: 2em;
     aspect-ratio: 16/9;
+}
+
+.v-row {
+  gap: 13%;
 }
 
 

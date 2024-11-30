@@ -6,7 +6,8 @@
 
 <template>
     <v-img
-    src="/src/components/img/trio_presentation.jpg">
+    src="/src/components/img/trio_accueil.jpg"
+    max-height="800px">
     </v-img>
 <v-container>
     <div class="div_carousel">

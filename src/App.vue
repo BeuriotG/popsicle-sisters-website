@@ -132,7 +132,7 @@ html {
 
   .buttons {
      position: absolute;
-     top:-20%;
+     top:30%;
      right: 0;
 
   }
@@ -179,7 +179,7 @@ h1 {
   font-weight: 500;
   font-size: 1.5em;
   position: absolute;
-  bottom: -15px;
+  bottom: 15%;
 }
 
 .h1_cormorant {
