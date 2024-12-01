@@ -1,14 +1,17 @@
 <script setup lang="ts">
 
 const photos = [
-    "/src/components/img/trio_presentation.jpg",
-    "/src/components/img/trio_presentation.jpg",
-    "/src/components/img/trio_presentation.jpg",
-    "/src/components/img/trio_presentation.jpg",
-    "/src/components/img/trio_presentation.jpg",
-    "/src/components/img/trio_presentation.jpg",
+    "/src/components/img/Galerie1.jpg",
+    "/src/components/img/Galerie5.jpg",
+    "/src/components/img/Galerie4.jpg",
+    "/src/components/img/Galerie2.jpg",
+    "/src/components/img/Galerie3.jpg",
+    "/src/components/img/Galerie6.jpg",
+    "/src/components/img/Galerie7.jpg",
     
 ]
+
+// Utiliser Complex Grid Layout
 
 </script>
 
@@ -23,12 +26,12 @@ const photos = [
     
 
 
-    <div class="video">
+    <!-- <div class="video">
         <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/ANjc2Jm2OAs?si=gC4sGkMNmzGvSSHN"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    </div> -->
 
 
   <v-container fluid >
@@ -67,8 +70,11 @@ h1 {
 }
 
 .v-row {
-  gap: 13%;
+  gap: 5%;
+  margin-left: 5%;
 }
+
+
 
 
 

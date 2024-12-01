@@ -12,7 +12,7 @@ function onSubmit(){
 
 <template>
     
-
+<!-- Mettre la photo à gauche en rond et les écrits à droite -->
 
     <v-container >
         <v-row no-gutters>

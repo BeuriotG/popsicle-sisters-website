@@ -5,10 +5,12 @@
 </script>
 
 <template>
+    <div class="container">
     <v-img
     src="/src/components/img/trio_accueil.jpg"
     max-height="800px">
     </v-img>
+</div>
 <v-container>
     <div class="div_carousel">
         <h2>QUI SOMMES-NOUS ?</h2>
@@ -51,6 +53,21 @@ h2 {
   color: black;
 }
 
+.container {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@media(max-width: 430px){
+    .container {
+    width: 300px;
+    height: 300px;
+}}
 
 .presentation_text_div {
     text-align: center;
@@ -66,7 +83,13 @@ h2 {
   color: black;
   padding-top: 1em;
   padding-bottom: 1em;
+ 
 }
+
+.v-container {
+    max-width: 2400px;
+}
+
 
 
 </style>

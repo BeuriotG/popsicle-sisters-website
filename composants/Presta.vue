@@ -19,6 +19,8 @@ const prestations = [
 
 <template>
 
+    <!-- En haut à gauche en rond la photo Pres 1 et en bas à droite la P¨res Noël -->
+
 <v-container>
             <v-col>
                 <v-sheet >
