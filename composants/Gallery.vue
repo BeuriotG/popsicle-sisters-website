@@ -1,15 +1,38 @@
 <script setup lang="ts">
 
 const photos = [
-    "/src/components/img/Galerie1.jpg",
-    "/src/components/img/Galerie5.jpg",
-    "/src/components/img/Galerie4.jpg",
-    "/src/components/img/Galerie2.jpg",
-    "/src/components/img/Galerie3.jpg",
-    "/src/components/img/Galerie6.jpg",
-    "/src/components/img/Galerie7.jpg",
-    
+  {
+    link: "/src/components/img/Galerie1.jpg",
+    cols: "4"
+  },
+  {
+    link: "/src/components/img/Galerie5.jpg",
+    cols: "6"
+  },  
+  {
+    link: "/src/components/img/Galerie4.jpg",
+    cols: "6"
+  },  
+  {
+    link: "/src/components/img/Galerie2.jpg",
+    cols: "4"
+  },  
+  {
+    link: "/src/components/img/Galerie3.jpg",
+    cols: "4"
+  },  
+  {
+    link: "/src/components/img/Galerie6.jpg",
+    cols: "3"
+  },  
+  {
+    link: "/src/components/img/Galerie7.jpg",
+    cols: "4"
+  },
 ]
+
+
+
 
 // Utiliser Complex Grid Layout
 
@@ -33,27 +56,20 @@ const photos = [
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div> -->
 
-
-  <v-container fluid >
-    <v-row justify="center" align="center" >
-      <v-col
- 
-        v-for="(photo, index) in photos"
-        :key="index"
-         cols="12" md="6" lg="5" 
-         class="d-flex justify-center"
-      
+<v-container>
+  <v-row>
+    <v-col
+    v-for="(photo, index) in photos"
+    :key="index"
+    :cols="photo.cols"
+    >
+      <v-img
+      :src="photo.link"
       >
-        <v-img
-          :src="photo"
-          class="rounded-img"
-          alt="Photo"
-          cover
-        ></v-img>
-        
-      </v-col>
-    </v-row>
-  </v-container>
+      </v-img>
+    </v-col>
+  </v-row>
+</v-container>
 </template>
 
 
@@ -69,10 +85,7 @@ h1 {
     aspect-ratio: 16/9;
 }
 
-.v-row {
-  gap: 5%;
-  margin-left: 5%;
-}
+
 
 
 

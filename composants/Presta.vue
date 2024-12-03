@@ -2,17 +2,14 @@
 
 const prestations = [
 {
-    titre: "Mariages",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    titre: "CE QUE NOUS PROPOSONS",
+    description: "Nous proposons des concerts et animations musicales (petits sets musicaux, happenings,...) pour vos événements : festivals, mariages, séminaires, et célébrations en tout genre. Nos prestations se font sur bande-son ou bien accompagnées de musiciens."
 },
 {
-    titre: "Evenements professionnels",
-    description:""
+    titre: "SAISON DE NOËL",
+    description:"Nous proposons également un répertoire de Noël pour célébrer les fêtes de fin d’année en chanson !"
 },
-{
-    titre: "Dates de fêtes (Noël, etc...)",
-    description: ""
-}
+
 ]
 
 </script>
@@ -104,7 +101,6 @@ h1 {
     right: 10%;
 }
 
-
 @media(max-width: 430px){
     .container-1 {
     width: 150px;
@@ -126,6 +122,35 @@ h1 {
     bottom: 20%;
     right: 10%;
 }}
+
+@media(max-width: 1450px){
+    .container-1 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+
+
+.container-3 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position:absolute;
+    bottom: 5%;
+    right: 10%;
+}}
+
+
 
 
 

@@ -32,13 +32,18 @@
 
 
                         <h2>Nos dernières activités</h2>
-                            <br>
-                            <v-carousel hide-delimiter-background :show-arrows="false" cycle>
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
+                            <v-carousel hide-delimiter-background :show-arrows="false" cycle >
+                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
+                                            cover>
+                            </v-carousel-item>
 
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
+                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
+                                            cover>
+                            </v-carousel-item>
 
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg"></v-carousel-item>
+                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
+                                            cover>
+                            </v-carousel-item>
                             </v-carousel>
                     </div>
 
@@ -63,6 +68,7 @@ h2 {
   color: black;
 }
 
+/* rounding of the picture */
 .container {
     width: 600px;
     height: 600px;
@@ -72,12 +78,7 @@ h2 {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-
-@media(max-width: 430px){
-    .container {
-    width: 300px;
-    height: 300px;
-}}
+/* rounding of the picture */
 
 .presentation_text_div {
     text-align: center;
@@ -86,20 +87,40 @@ h2 {
     padding-right: 25%
 }
 
-
-
 .div_carousel {
   background-color:antiquewhite;
   color: black;
-  padding-top: 1em;
-  padding-bottom: 1em;
- 
 }
 
 .v-container {
     max-width: 2400px;
 }
 
+/* media queries for tablets */
+/* media queries for tablets */
 
+/* media queries for telephones */
 
+@media(max-width: 430px) and (orientation: portrait){
+.container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.v-carousel-item {
+    max-height: 200px;
+}
+.v-window {
+    max-height: 250px;
+}
+}
+
+@media(max-width: 430px) and (orientation: landscape){
+    
+}
+/* media queries for telephones */
 </style>

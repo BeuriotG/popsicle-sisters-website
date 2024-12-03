@@ -123,24 +123,69 @@ html {
  
 }
 
-@media(max-width: 430px){
+/* media queries for tablets */
+@media(max-width: 1080px) and (orientation: portrait){
   .icon_logo {
     position: absolute;
-    top: 4em;
-    width: 50px;
+    top: 0.6em;
+    width: 180px;
+  }
+
+  .buttons {
+     position: absolute;
+     top: 30%;
+     right: 10%;
+    
+  }
+}
+
+@media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape){
+  .icon_logo {
+    position: absolute;
+    top: 0.6em;
+    width: 180px;
+  }
+
+  .buttons {
+     position: absolute;
+     top: 20%;
+     right: 10%;
+    
+  }
+}
+
+/* media queries for tablets */
+
+
+/* media queries for telephones */
+@media(max-width: 430px) and (orientation: portrait){
+  .icon_logo {
+    position: absolute;
+    top: 3em;
+    left: -1em;
+    width: 70px;
   }
 
   .buttons {
      position: absolute;
      top:30%;
-     right: 0;
-
   }
-
-
-
 }
 
+@media(max-width: 930px) and (orientation: landscape){
+  .icon_logo {
+    position: absolute;
+    top: 3em;
+    width: 90px;
+  }
+
+  .buttons {
+     position: absolute;
+     top:35%;
+  }
+}
+
+/* media queries for telephones */
 </style>
 
 <style scoped>
@@ -167,19 +212,22 @@ h1 {
   opacity: 0;
 }
 
-@media(max-width: 430px){
+/* media queries for tablets */
+@media(max-width: 1080px) and (orientation: portrait){
   .no-hover {
     margin: auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   h1 {
   margin-left: 3.5em;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 2em;
   position: absolute;
-  bottom: 15%;
+  left: 5%;
+  bottom: 5%
+
 }
 
 .h1_cormorant {
@@ -188,6 +236,80 @@ h1 {
   font-size: 1.1em;
 }
 }
+
+@media(max-width: 1080px)and (max-height: 820px) and (orientation: landscape){
+  .no-hover {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  h1 {
+  margin-left: 3.5em;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 2em;
+  position: absolute;
+  left: 5%;
+  bottom: 5%
+
+}
+
+.h1_cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+}
+
+/* media queries for tablets */
+
+
+/* media queries for telephones */
+@media(max-width: 430px) and (orientation: portrait){
+  .no-hover {
+    margin: auto;
+    font-size: 0.6rem;
+  }
+
+  h1 {
+  margin-left: 15%;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 20%;
+}
+
+.h1_cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+}
+
+@media(max-width: 930px) and (orientation: landscape){
+  .no-hover {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  h1 {
+  margin-left: 15%;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 2em;
+  position: absolute;
+  bottom: 5%;
+}
+
+.h1_cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+}
+
+/* media queries for telephones */
 
 
 </style>
