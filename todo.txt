@@ -1,0 +1,24 @@
+Bannière:
+
+- Les boutons et le titre ne doivent plus se toucher dans les resos à moins de 1400px
+
+Home:
+
+- media queries pour tablettes ok
+- media queries pour telephones ok
+
+
+Presta:
+
+- media queries pour tablettes ok
+- media queries pour telephones ok
+
+Contact:
+
+- media queries pour tablettes ok 
+- media queries pour telephones ok 
+
+Gallery:
+
+- media queries pour tablettes ok 
+- media queries pour telephones ok 

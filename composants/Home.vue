@@ -1,5 +1,10 @@
 <script setup lang="ts">
 
+const h2 = {
+    presentation: "QUI SOMMES NOUS ?",
+    carousel: "Nos dernières activités"
+}
+const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal swing/jazz. Nous vous invitons dans notre univers retro, où se mêlent chants d'après-guerre et chansons modernes, des plus grands standards de jazz aux hits pop du 21ème siècle revisités à la mode du swing !"
 
 
 </script>
@@ -8,7 +13,7 @@
     <v-container>
         <v-row>
             <v-col>
-                 <div class="container">
+                 <div class="rounded-image">
     <v-img
     src="/src/components/img/trio_accueil.jpg"
     max-height="800px">
@@ -18,31 +23,25 @@
             <v-col>
                 <v-container>
                     <div class="div_carousel">
-                        <h2>QUI SOMMES-NOUS ?</h2>
+                        <h2>{{ h2.presentation }}</h2>
 
                             <div class="presentation_text_div">
-                                <p>
-                                    Nous sommes les Popsicle Sisters, un trio vocal
-                                    swing/jazz. Nous vous invitons dans notre univers
-                                    retro, où se mêlent chants d’après-guerre et
-                                    chansons modernes, des plus grands standards
-                                    de jazz aux hits pop du 21ème siècle revisités à la
-                                    mode du swing ! </p>
+                                <p> {{ paragraphPresentation }} </p>
                             </div>
 
 
-                        <h2>Nos dernières activités</h2>
+                        <h2>{{h2.carousel}}</h2>
                             <v-carousel hide-delimiter-background :show-arrows="false" cycle >
                             <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            cover>
+                                            contain>
                             </v-carousel-item>
 
                             <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            cover>
+                                            contain>
                             </v-carousel-item>
 
                             <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            cover>
+                                            contain>
                             </v-carousel-item>
                             </v-carousel>
                     </div>
@@ -69,7 +68,7 @@ h2 {
 }
 
 /* rounding of the picture */
-.container {
+.rounded-image {
     width: 600px;
     height: 600px;
     overflow: hidden;
@@ -97,12 +96,25 @@ h2 {
 }
 
 /* media queries for tablets */
+
+@media(max-width: 1080px) and (orientation: portrait) {
+    /* Nothing yet, looks fine */
+}
+
+@media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape) {
+.v-window {
+    max-height: 250px;
+}    
+.v-carousel-item{
+    height: 240px;
+}
+}
 /* media queries for tablets */
 
 /* media queries for telephones */
 
 @media(max-width: 430px) and (orientation: portrait){
-.container {
+.rounded-image {
     width: 250px;
     height: 250px;
     overflow: hidden;
@@ -117,10 +129,36 @@ h2 {
 .v-window {
     max-height: 250px;
 }
+h2 {
+    font-size: medium;
+}
+p {
+    font-size: small;
+}
 }
 
-@media(max-width: 430px) and (orientation: landscape){
-    
+@media(max-width: 930px) and (orientation: landscape){
+.rounded-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.v-carousel-item {
+    max-height: 200px;
+}
+.v-window {
+    max-height: 250px;
+}
+h2 {
+    font-size: medium;
+}
+p {
+    font-size: small;
+}
 }
 /* media queries for telephones */
 </style>

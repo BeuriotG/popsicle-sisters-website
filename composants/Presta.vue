@@ -12,6 +12,7 @@ const prestations = [
 
 ]
 
+const h2Prestation = "Nos prestations"
 </script>
 
 <template>
@@ -19,7 +20,7 @@ const prestations = [
     <!-- En haut à gauche en rond la photo Pres 1 et en bas à droite la P¨res Noël -->
 <v-container>
     <v-row>
-        <v-col>
+        <v-col class="col-1">
             <div class="container-1">
                 <v-img
                 src="/src/components/img/Prestations1.jpg"
@@ -28,21 +29,21 @@ const prestations = [
             </div>
         </v-col>
         <v-col>
-            <v-container>
-                <v-col>
+            <v-container class="col-2">
+                <v-col >
                     <v-sheet >
-                        <div class="container-2">
-                            <h2>Nos prestations</h2>
+                        
+                            <h2>{{h2Prestation}}</h2>
                             <div v-for="(prestation, index) in prestations" :key="index" class="prestation-section">
                                 <h3>{{ prestation.titre }}</h3>
                                 <p class="text-center">{{ prestation.description }}</p>
                             </div>
-                        </div>
+                        
                     </v-sheet>
                 </v-col>
             </v-container>
         </v-col>
-        <v-col>
+        <v-col class="col-3">
             <div class="container-3">
                 <v-img
                 src="/src/components/img/Prestations Noel.jpg"
@@ -101,30 +102,12 @@ h1 {
     right: 10%;
 }
 
-@media(max-width: 430px){
-    .container-1 {
-    width: 150px;
-    height: 150px;
-    position:absolute;
-    bottom: 20%;
-    left: 10%;
+/* media queries for tablets */
+@media(max-width: 1080px) and (orientation: portrait){
+.v-col {
+    width: 300px;
 }
-
-.container-2 {
-        position: absolute;
-        top: 15%;
-}
-
-.container-3 {
-    width: 150px;
-    height: 150px;
-    position:absolute;
-    bottom: 20%;
-    right: 10%;
-}}
-
-@media(max-width: 1450px){
-    .container-1 {
+.container-1 {
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -132,11 +115,9 @@ h1 {
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
+
     
 }
-
-
-
 .container-3 {
     width: 200px;
     height: 200px;
@@ -145,10 +126,100 @@ h1 {
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    position:absolute;
-    bottom: 5%;
-    right: 10%;
+    position: inherit;
 }}
+
+@media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape) {
+
+    .v-col {
+    width: 300px;
+}
+.container-1 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    
+}
+.container-3 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: inherit;
+}}  
+
+
+/* media queries for tablets */
+
+/* media queries for telephones */
+@media(max-width: 430px) and (orientation: portrait){
+.container-1 {
+    width: 100px;
+    height: 100px;
+    position:inherit;
+}
+
+.col-1 {
+    width: 100px;
+}
+
+.col-2 {
+    width: 200px;
+}
+.text-center {
+    font-size: small;
+}
+
+.container-3 {
+    width: 100px;
+    height: 100px;
+    position:inherit;
+}}
+
+.col-3 {
+    width: 100px;
+}
+
+@media(max-width: 930px) and (orientation: landscape) {
+
+.container-1 {
+    width: 100px;
+    height: 100px;
+    position:inherit;
+}
+
+.col-1 {
+    width: 100px;
+}
+
+.col-2 {
+    width: 200px;
+}
+.text-center {
+    font-size: small;
+}
+
+.container-3 {
+    width: 100px;
+    height: 100px;
+    position:inherit;
+}
+
+.col-3 {
+    width: 100px;
+}
+
+}
+/* media queries for telephones */
+
 
 
 

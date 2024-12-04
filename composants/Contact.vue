@@ -6,7 +6,16 @@ function onSubmit(){
     window.close
 }
 
+const h2 = {
+    coordonnees: "Nos coordonnées",
+    reseau: "Nos réseaux",
+    honoraires: "Nos honoraires"
+}
 
+const p = {
+    mail: "popsisclesisterstrio@gmail.com",
+    contact: "Contactez-nous pour établir un devis de prestation sur mesure."
+}
 
 </script>
 
@@ -33,9 +42,9 @@ function onSubmit(){
                     <v-row>
                         <v-col>
                             <v-sheet >
-                                <h2>Nos coordonnées</h2>
-                                <p>popsisclesisterstrio@gmail.com</p>
-                                <h2>Nos réseaux</h2>
+                                <h2>{{h2.coordonnees}}</h2>
+                                <p>{{p.mail}}</p>
+                                <h2>{{h2.reseau}}</h2>
                                 
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                                         Instagram </a>
@@ -46,8 +55,8 @@ function onSubmit(){
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a> <img
                                     src="/src/components/icons/youtube.png"
                                     alt="" width="25px">
-                                    <h2>Nos honoraires</h2>
-                                <p>Contactez-nous pour établir un devis de prestation sur mesure.</p>
+                                    <h2>{{h2.honoraires}}</h2>
+                                <p>{{p.contact}}</p>
                                 <v-btn
                                 class="no-hover"
                                 @click="onSubmit">
@@ -100,21 +109,54 @@ h2 {
     
 }
 
-@media(max-width: 1079px){
-    .container {
-    width: 150px;
-    height: 150px;
-}
-    .v-col {
-        padding: 0px;
-        height: min-content;
-    }
+/* media queries for tablets */
+@media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape){
 
-    h1 {
-        margin: 0px;
-    }
-
+.v-col {
+    padding: 0px;
+    height: min-content;
 }
+
+h1 {
+    margin: 0px;
+}
+}
+
+@media(max-width: 1080px) and  (orientation: portrait){
+
+.v-col {
+    padding: 0px;
+    height: min-content;
+}
+
+h1 {
+    margin: 0px;
+}
+}
+
+/* media queries for tablets */
+
+/* media queries for telephones */
+
+@media(max-width: 430px) and (orientation: portrait) {
+    .container{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 930px) and (orientation: landscape) {
+    .container{
+        width: 200px;
+        height: 200px;
+    }
+    h1,
+    h2,
+    p {
+        font-size: 0.8em;
+    }
+}
+/* media queries for telephones */
 
 
 
