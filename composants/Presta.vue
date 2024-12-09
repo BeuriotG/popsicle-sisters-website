@@ -12,7 +12,6 @@ const prestations = [
 
 ]
 
-const h2Prestation = "Nos prestations"
 </script>
 
 <template>
@@ -32,8 +31,7 @@ const h2Prestation = "Nos prestations"
             <v-container class="col-2">
                 <v-col >
                     <v-sheet >
-                        
-                            <h2>{{h2Prestation}}</h2>
+
                             <div v-for="(prestation, index) in prestations" :key="index" class="prestation-section">
                                 <h3>{{ prestation.titre }}</h3>
                                 <p class="text-center">{{ prestation.description }}</p>

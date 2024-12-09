@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
 const photos = [
-  {
-    link: "/src/components/img/Galerie1.jpg",
+{
+    link: "/src/components/img/Galerie7.jpg",
     cols: "4"
   },
   {
@@ -25,16 +25,13 @@ const photos = [
     link: "/src/components/img/Galerie6.jpg",
     cols: "3"
   },  
+
   {
-    link: "/src/components/img/Galerie7.jpg",
+    link: "/src/components/img/Galerie1.jpg",
     cols: "4"
-  },
+  }
 ]
 
-
-
-
-// Utiliser Complex Grid Layout
 
 </script>
 
@@ -84,11 +81,10 @@ h1 {
     margin-top: 2em;
     aspect-ratio: 16/9;
 }
-
-
-
-
-
-
-
+.v-container {
+  max-width: 100%;
+}
+.v-col {
+  padding: 1%;
+}
 </style>

@@ -82,13 +82,14 @@ h2 {
 .presentation_text_div {
     text-align: center;
     color: black;
-    padding-left: 25%;
-    padding-right: 25%
+    padding-left: 10%;
+    padding-right: 10%
 }
 
 .div_carousel {
   background-color:antiquewhite;
   color: black;
+  padding-top: 0.2em;
 }
 
 .v-container {

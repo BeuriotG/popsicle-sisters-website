@@ -84,7 +84,7 @@ function goContact() {
 
       <div class="buttons" >
           <v-btn size="small" class="no-hover" @click="goHome">Accueil</v-btn>
-          <v-btn size="small" class="no-hover" @click="goPresta">Prestation</v-btn>
+          <v-btn size="small" class="no-hover" @click="goPresta">Prestations</v-btn>
           <v-btn size="small" class="no-hover" @click="goGallery">Galerie</v-btn>
           <v-btn size="small" class="no-hover" @click="goContact">Contact</v-btn>
         </div>
@@ -106,6 +106,17 @@ function goContact() {
 
 html {
   background: #5c0101;
+}
+
+h1,
+h2,
+button {
+  font-family: "Cinzel Decorative", serif;
+}
+
+p,
+a {
+  font-family: "Cormorant Garamond", serif;
 }
 
 .icon_logo {
@@ -139,7 +150,7 @@ html {
   }
 }
 
-@media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape){
+@media(max-width: 1500px) and (orientation: landscape){
   .icon_logo {
     position: absolute;
     top: 0.6em;
@@ -161,15 +172,18 @@ html {
 @media(max-width: 430px) and (orientation: portrait){
   .icon_logo {
     position: absolute;
-    top: 3em;
+    top: 3.8em;
     left: -1em;
     width: 70px;
   }
 
   .buttons {
      position: absolute;
-     top:30%;
+     top: 30%;
+     left: 5%;
+     right: 0%;
   }
+
 }
 
 @media(max-width: 930px) and (orientation: landscape){
@@ -204,7 +218,7 @@ h1 {
 }
 .no-hover {
   margin-right:3em;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cinzel Decorative", serif;
   font-size: 1rem;
 }
 .no-hover:hover :deep(.v-btn__overlay) {
@@ -237,7 +251,7 @@ h1 {
 }
 }
 
-@media(max-width: 1080px)and (max-height: 820px) and (orientation: landscape){
+@media(max-width: 1500px) and (orientation: landscape){
   .no-hover {
     margin: auto;
     font-size: 1rem;

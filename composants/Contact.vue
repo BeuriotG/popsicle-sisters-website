@@ -7,8 +7,6 @@ function onSubmit(){
 }
 
 const h2 = {
-    coordonnees: "Nos coordonnées",
-    reseau: "Nos réseaux",
     honoraires: "Nos honoraires"
 }
 
@@ -35,32 +33,26 @@ const p = {
             <v-col>
                 <v-container >
                     <v-row no-gutters>
-                        <v-col>
-                        <h1>Contact</h1>
-                    </v-col>
                     </v-row> 
                     <v-row>
                         <v-col>
                             <v-sheet >
-                                <h2>{{h2.coordonnees}}</h2>
                                 <p>{{p.mail}}</p>
-                                <h2>{{h2.reseau}}</h2>
-                                
+                                <img src="/src/components/icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
+                                alt="" width="40px">
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                                         Instagram </a>
-                                    <img src="/src/components/icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
-                                        alt="" width="40px">
-                                
                                 <br>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a> <img
+                                <img
                                     src="/src/components/icons/youtube.png"
                                     alt="" width="25px">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a> 
                                     <h2>{{h2.honoraires}}</h2>
                                 <p>{{p.contact}}</p>
                                 <v-btn
                                 class="no-hover"
                                 @click="onSubmit">
-                                    Envoyez-nous un petit mail !
+                                    Envoyez-nous un mail !
                                 </v-btn>
                             </v-sheet>
                         </v-col>            
@@ -132,6 +124,10 @@ h1 {
 h1 {
     margin: 0px;
 }
+}
+.container {
+    width: 300px;
+    height: 300px;   
 }
 
 /* media queries for tablets */
