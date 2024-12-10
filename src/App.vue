@@ -65,13 +65,10 @@ function goContact() {
   onScreenGallery.value = false
 }
 
-
-
-
 </script>
 
-
 <template>
+
   <v-app>
     <v-main>
       <img src="/src/components/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo"></img>
@@ -100,6 +97,7 @@ function goContact() {
       
     </v-main>
   </v-app>
+
 </template>
 
 <style>
@@ -114,9 +112,14 @@ button {
   font-family: "Cinzel Decorative", serif;
 }
 
+p{
+  font-size: 1.2em;
+}
+
 p,
 a {
   font-family: "Cormorant Garamond", serif;
+
 }
 
 .icon_logo {
@@ -136,13 +139,14 @@ a {
 
 /* media queries for tablets */
 @media(max-width: 1080px) and (orientation: portrait){
-  .icon_logo {
+  
+.icon_logo {
     position: absolute;
     top: 0.6em;
     width: 180px;
-  }
+}
 
-  .buttons {
+.buttons {
      position: absolute;
      top: 30%;
      right: 10%;
@@ -151,18 +155,19 @@ a {
 }
 
 @media(max-width: 1500px) and (orientation: landscape){
-  .icon_logo {
+
+.icon_logo {
     position: absolute;
     top: 0.6em;
     width: 180px;
-  }
+}
 
-  .buttons {
+.buttons {
      position: absolute;
      top: 20%;
      right: 10%;
     
-  }
+}
 }
 
 /* media queries for tablets */
@@ -170,33 +175,34 @@ a {
 
 /* media queries for telephones */
 @media(max-width: 430px) and (orientation: portrait){
-  .icon_logo {
+  
+.icon_logo {
     position: absolute;
     top: 3.8em;
     left: -1em;
     width: 70px;
-  }
+}
 
-  .buttons {
+.buttons {
      position: absolute;
      top: 30%;
      left: 5%;
      right: 0%;
-  }
-
+}
 }
 
 @media(max-width: 930px) and (orientation: landscape){
-  .icon_logo {
+  
+.icon_logo {
     position: absolute;
     top: 3em;
     width: 90px;
-  }
+}
 
-  .buttons {
+.buttons {
      position: absolute;
      top:35%;
-  }
+}
 }
 
 /* media queries for telephones */
@@ -216,11 +222,13 @@ h1 {
   font-weight: 200;
   font-size: 1.1em;
 }
+
 .no-hover {
   margin-right:3em;
   font-family: "Cinzel Decorative", serif;
   font-size: 1rem;
 }
+
 .no-hover:hover :deep(.v-btn__overlay) {
   background-color: inherit;
   opacity: 0;
@@ -228,12 +236,13 @@ h1 {
 
 /* media queries for tablets */
 @media(max-width: 1080px) and (orientation: portrait){
-  .no-hover {
+  
+.no-hover {
     margin: auto;
     font-size: 1rem;
-  }
+}
 
-  h1 {
+h1 {
   margin-left: 3.5em;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
@@ -252,12 +261,13 @@ h1 {
 }
 
 @media(max-width: 1500px) and (orientation: landscape){
-  .no-hover {
+  
+.no-hover {
     margin: auto;
     font-size: 1rem;
-  }
+}
 
-  h1 {
+h1 {
   margin-left: 3.5em;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
@@ -280,12 +290,13 @@ h1 {
 
 /* media queries for telephones */
 @media(max-width: 430px) and (orientation: portrait){
-  .no-hover {
+  
+.no-hover {
     margin: auto;
     font-size: 0.6rem;
-  }
+}
 
-  h1 {
+h1 {
   margin-left: 15%;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
@@ -302,12 +313,13 @@ h1 {
 }
 
 @media(max-width: 930px) and (orientation: landscape){
-  .no-hover {
+  
+.no-hover {
     margin: auto;
     font-size: 1rem;
-  }
+}
 
-  h1 {
+h1 {
   margin-left: 15%;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
@@ -324,6 +336,4 @@ h1 {
 }
 
 /* media queries for telephones */
-
-
 </style>

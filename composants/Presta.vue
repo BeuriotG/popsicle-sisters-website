@@ -9,14 +9,12 @@ const prestations = [
     titre: "SAISON DE NOËL",
     description:"Nous proposons également un répertoire de Noël pour célébrer les fêtes de fin d’année en chanson !"
 },
-
 ]
 
 </script>
 
 <template>
 
-    <!-- En haut à gauche en rond la photo Pres 1 et en bas à droite la P¨res Noël -->
 <v-container>
     <v-row>
         <v-col class="col-1">
@@ -102,9 +100,11 @@ h1 {
 
 /* media queries for tablets */
 @media(max-width: 1080px) and (orientation: portrait){
+
 .v-col {
     width: 300px;
 }
+
 .container-1 {
     width: 200px;
     height: 200px;
@@ -116,6 +116,7 @@ h1 {
 
     
 }
+
 .container-3 {
     width: 200px;
     height: 200px;
@@ -129,9 +130,10 @@ h1 {
 
 @media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape) {
 
-    .v-col {
+.v-col {
     width: 300px;
 }
+
 .container-1 {
     width: 200px;
     height: 200px;
@@ -143,6 +145,7 @@ h1 {
 
     
 }
+
 .container-3 {
     width: 200px;
     height: 200px;
@@ -172,8 +175,9 @@ h1 {
 .col-2 {
     width: 200px;
 }
+
 .text-center {
-    font-size: small;
+    font-size: medium;
 }
 
 .container-3 {
@@ -201,8 +205,9 @@ h1 {
 .col-2 {
     width: 200px;
 }
+
 .text-center {
-    font-size: small;
+    font-size: medium;
 }
 
 .container-3 {
@@ -214,7 +219,6 @@ h1 {
 .col-3 {
     width: 100px;
 }
-
 }
 /* media queries for telephones */
 

@@ -6,7 +6,6 @@ const h2 = {
 }
 const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal swing/jazz. Nous vous invitons dans notre univers retro, où se mêlent chants d'après-guerre et chansons modernes, des plus grands standards de jazz aux hits pop du 21ème siècle revisités à la mode du swing !"
 
-
 </script>
 
 <template>
@@ -50,7 +49,6 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
             </v-col>
         </v-row>
     </v-container>
-
 
 </template>
 
@@ -103,9 +101,11 @@ h2 {
 }
 
 @media(max-width: 1080px) and (max-height: 820px) and (orientation: landscape) {
+
 .v-window {
     max-height: 250px;
-}    
+}
+
 .v-carousel-item{
     height: 240px;
 }
@@ -115,6 +115,7 @@ h2 {
 /* media queries for telephones */
 
 @media(max-width: 430px) and (orientation: portrait){
+
 .rounded-image {
     width: 250px;
     height: 250px;
@@ -124,21 +125,26 @@ h2 {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
 .v-carousel-item {
     max-height: 200px;
 }
+
 .v-window {
     max-height: 250px;
 }
+
 h2 {
     font-size: medium;
 }
+
 p {
-    font-size: small;
+    font-size: medium;
 }
 }
 
 @media(max-width: 930px) and (orientation: landscape){
+
 .rounded-image {
     width: 250px;
     height: 250px;
@@ -148,15 +154,19 @@ p {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
 .v-carousel-item {
     max-height: 200px;
 }
+
 .v-window {
     max-height: 250px;
 }
+
 h2 {
     font-size: medium;
 }
+
 p {
     font-size: small;
 }

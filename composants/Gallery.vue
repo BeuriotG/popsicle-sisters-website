@@ -32,10 +32,10 @@ const photos = [
   }
 ]
 
-
 </script>
 
 <template>
+
   <v-container>
     <v-row>
       <v-col>
@@ -67,6 +67,7 @@ const photos = [
     </v-col>
   </v-row>
 </v-container>
+
 </template>
 
 

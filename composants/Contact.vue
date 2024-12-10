@@ -37,17 +37,23 @@ const p = {
                     <v-row>
                         <v-col>
                             <v-sheet >
-                                <p>{{p.mail}}</p>
+                                <p><img src="/src/components/icons/gmail.png"
+                                alt="" width="">
+                                    {{p.mail}}
+                                </p>
+                                <p>
                                 <img src="/src/components/icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
                                 alt="" width="40px">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/popsicle_sisters/">
                                         Instagram </a>
-                                <br>
+                                </p>
+                                <p>
                                 <img
                                     src="/src/components/icons/youtube.png"
                                     alt="" width="25px">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a> 
-                                    <h2>{{h2.honoraires}}</h2>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@PopsicleSisters">Youtube</a> 
+                                </p>    
+                                <h2>{{h2.honoraires}}</h2>
                                 <p>{{p.contact}}</p>
                                 <v-btn
                                 class="no-hover"
@@ -62,10 +68,6 @@ const p = {
         </v-row>
     </v-container>
 
-    
-
-
-
 </template>
 
 <style>
@@ -73,7 +75,6 @@ const p = {
 a {
     text-decoration: none;
     color: inherit;
-    font-size: 1.3em;
 }
 
 </style>
@@ -83,7 +84,6 @@ a {
 h1 {
     text-align: center;
 }
-
 
 h2 {
     /* padding-top: 1em; */
@@ -97,8 +97,7 @@ h2 {
     border-radius: 50%;
     margin: auto;
     margin-top: 2em;
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;    
 }
 
 /* media queries for tablets */
@@ -125,6 +124,7 @@ h1 {
     margin: 0px;
 }
 }
+
 .container {
     width: 300px;
     height: 300px;   
@@ -135,25 +135,28 @@ h1 {
 /* media queries for telephones */
 
 @media(max-width: 430px) and (orientation: portrait) {
-    .container{
+.container{
         width: 200px;
         height: 200px;
-    }
+}
+h1,
+h2,
+p {
+        font-size: medium;
+}
 }
 
 @media(max-width: 930px) and (orientation: landscape) {
-    .container{
+.container{
         width: 200px;
         height: 200px;
     }
-    h1,
-    h2,
-    p {
-        font-size: 0.8em;
-    }
+h1,
+h2,
+p {
+        font-size: medium;
+}
 }
 /* media queries for telephones */
-
-
 
 </style>

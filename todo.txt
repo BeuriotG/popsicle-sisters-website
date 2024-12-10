@@ -1,6 +1,6 @@
 Bannière:
 
-- Les boutons et le titre ne doivent plus se toucher dans les resos à moins de 1400px
+- Les boutons et le titre ne doivent plus se toucher dans les resos à moins de 1400px ok
 - phone regler le logo ok
 
 Home:
@@ -34,5 +34,5 @@ Gallery:
 
 App:
 - police sur tous les textes (cinzel pour les titres) et l'autre pour le reste ok
-- textes plus gros
+- textes plus gros ok
 - galaxy s20 android11 manque un bouton à la bannière ok
