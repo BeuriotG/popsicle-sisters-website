@@ -1,5 +1,18 @@
 <script setup lang="ts">
 
+const emits = defineEmits(['changeScreen'])
+
+function goPresta() {
+    emits('changeScreen', 'presta')
+}
+function goGallery() {
+    emits('changeScreen', 'gallery')
+}
+function goContact() {
+    emits('changeScreen', 'contact')
+}
+
+
 const h2 = {
     presentation: "QUI SOMMES NOUS ?",
     carousel: "Nos dernières activités"
@@ -31,16 +44,25 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
 
                         <h2>{{h2.carousel}}</h2>
                             <v-carousel hide-delimiter-background :show-arrows="false" cycle >
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            contain>
+                            <v-carousel-item   
+                                            @click="goPresta"
+                                            src="/src/components/img/trio_presentation.jpg" 
+                                            contain
+                                            >
                             </v-carousel-item>
 
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            contain>
+                            <v-carousel-item
+                                            @click="goGallery"
+                                             src="/src/components/img/trio_presentation.jpg" 
+                                            contain
+                                           >
                             </v-carousel-item>
 
-                            <v-carousel-item src="/src/components/img/trio_presentation.jpg" 
-                                            contain>
+                            <v-carousel-item
+                                            @click="goContact"
+                                            src="/src/components/img/trio_presentation.jpg" 
+                                            contain
+                                            >
                             </v-carousel-item>
                             </v-carousel>
                     </div>
@@ -92,6 +114,10 @@ h2 {
 
 .v-container {
     max-width: 2400px;
+}
+
+.v-carousel {
+    cursor: pointer;
 }
 
 /* media queries for tablets */

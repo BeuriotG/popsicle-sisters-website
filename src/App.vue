@@ -6,64 +6,13 @@ import Contact from '../composants/Contact.vue';
 import Gallery from '../composants/Gallery.vue';
 import Presta from '../composants/Presta.vue';
 
+const currentScreen = ref('home')
 
-
-const props = defineProps({
-  onScreenHome:
-  {
-    type: Boolean,
-    default: true,
-  },
-  onScreenPresta:
-  {
-    type: Boolean,
-    default: false,
-  },
-  onScreenGallery:
-  {
-    type: Boolean,
-    default: false,
-  },
-  onScreenContact:
-  {
-    type: Boolean,
-    default: false,
-  }
-})
-
-const onScreenHome = ref(props.onScreenHome)
-const onScreenPresta = ref(props.onScreenPresta)
-const onScreenGallery = ref(props.onScreenGallery)
-const onScreenContact = ref(props.onScreenContact)
-
-
-function goHome() {
-  onScreenHome.value = true
-  onScreenContact.value = false
-  onScreenPresta.value = false
-  onScreenGallery.value = false
+function handleChangeScreen (screen: string){
+  currentScreen.value = screen
 }
 
-function goPresta() {
-  onScreenHome.value = false
-  onScreenContact.value = false
-  onScreenPresta.value = true
-  onScreenGallery.value = false
-}
 
-function goGallery() {
-  onScreenHome.value = false
-  onScreenContact.value = false
-  onScreenPresta.value = false
-  onScreenGallery.value = true
-}
-
-function goContact() {
-  onScreenHome.value = false
-  onScreenContact.value = true
-  onScreenPresta.value = false
-  onScreenGallery.value = false
-}
 
 </script>
 
@@ -80,20 +29,20 @@ function goContact() {
       <h1><span class="h1_cormorant">POPSICLE</span> SISTERS</h1>
 
       <div class="buttons" >
-          <v-btn size="small" class="no-hover" @click="goHome">Accueil</v-btn>
-          <v-btn size="small" class="no-hover" @click="goPresta">Prestations</v-btn>
-          <v-btn size="small" class="no-hover" @click="goGallery">Galerie</v-btn>
-          <v-btn size="small" class="no-hover" @click="goContact">Contact</v-btn>
+          <v-btn size="small" class="no-hover" @click="handleChangeScreen('home')">Accueil</v-btn>
+          <v-btn size="small" class="no-hover" @click="handleChangeScreen('presta')">Prestations</v-btn>
+          <v-btn size="small" class="no-hover" @click="handleChangeScreen('gallery')">Galerie</v-btn>
+          <v-btn size="small" class="no-hover" @click="handleChangeScreen('contact')">Contact</v-btn>
         </div>
       </v-toolbar>
 
 
 
 
-      <Home v-if="onScreenHome"></Home>
-      <Gallery v-if="onScreenGallery"></Gallery>
-      <Presta v-if="onScreenPresta"></Presta>
-      <Contact v-if="onScreenContact"></Contact>
+      <Home v-if="currentScreen === 'home'" @change-screen="handleChangeScreen"></Home>
+      <Gallery v-if="currentScreen === 'gallery'"></Gallery>
+      <Presta v-if="currentScreen === 'presta'"></Presta>
+      <Contact v-if="currentScreen === 'contact'"></Contact>
       
     </v-main>
   </v-app>
