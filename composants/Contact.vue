@@ -37,22 +37,25 @@ const p = {
                     <v-row>
                         <v-col>
                             <v-sheet >
-                                <p><img src="/src/components/icons/gmail.png"
-                                alt="" width="">
-                                    {{p.mail}}
-                                </p>
-                                <p>
-                                <img src="/src/components/icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
-                                alt="" width="40px">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/popsicle_sisters/">
-                                        Instagram </a>
-                                </p>
-                                <p>
-                                <img
-                                    src="/src/components/icons/youtube.png"
+                                <div class="align-left">
+                                    <p><img src="/src/components/icons/gmail.png"
+                                    alt="" width="">
+                                        {{p.mail}}
+                                    </p>
+                                    <p>
+                                    <img src="/src/components/icons/instagram.png"
                                     alt="" width="25px">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@PopsicleSisters">Youtube</a> 
-                                </p>    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/popsicle_sisters/">
+                                            Instagram </a>
+                                    </p>
+                                    <p>
+                                    <img
+                                        src="/src/components/icons/youtube.png"
+                                        alt="" width="25px">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@PopsicleSisters">  Youtube</a> 
+                                    </p> 
+                                </div>   
+                                <br>
                                 <h2>{{h2.honoraires}}</h2>
                                 <p>{{p.contact}}</p>
                                 <v-btn
@@ -90,9 +93,17 @@ h2 {
     background-color: transparent;
 }
 
+p{
+    font-size: 1.5em;
+}
+
+.align-left {
+    text-align: left;
+}
+
 .container {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
@@ -113,7 +124,7 @@ h1 {
 }
 }
 
-@media(max-width: 1080px) and  (orientation: portrait){
+@media(max-width: 810px) and  (orientation: portrait){
 
 .v-col {
     padding: 0px;
@@ -123,11 +134,13 @@ h1 {
 h1 {
     margin: 0px;
 }
-}
+
 
 .container {
     width: 300px;
     height: 300px;   
+}
+
 }
 
 /* media queries for tablets */

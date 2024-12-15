@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { VCardItem } from 'vuetify/lib/components/index.mjs';
+
 
 const emits = defineEmits(['changeScreen'])
 
@@ -15,7 +17,7 @@ function goContact() {
 
 const h2 = {
     presentation: "QUI SOMMES NOUS ?",
-    carousel: "Nos dernières activités"
+    carousel: "Découvrir les Popsicle Sisters"
 }
 const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal swing/jazz. Nous vous invitons dans notre univers retro, où se mêlent chants d'après-guerre et chansons modernes, des plus grands standards de jazz aux hits pop du 21ème siècle revisités à la mode du swing !"
 
@@ -44,23 +46,24 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
 
                         <h2>{{h2.carousel}}</h2>
                             <v-carousel hide-delimiter-background :show-arrows="false" cycle >
+                            
                             <v-carousel-item   
                                             @click="goPresta"
-                                            src="/src/components/img/trio_presentation.jpg" 
+                                            src="/src/components/img/Lien_Presta.png" 
                                             contain
                                             >
                             </v-carousel-item>
 
                             <v-carousel-item
                                             @click="goGallery"
-                                             src="/src/components/img/trio_presentation.jpg" 
+                                             src="/src/components/img/Lien_Galerie.png" 
                                             contain
                                            >
                             </v-carousel-item>
 
                             <v-carousel-item
                                             @click="goContact"
-                                            src="/src/components/img/trio_presentation.jpg" 
+                                            src="/src/components/img/Lien_Contact.png" 
                                             contain
                                             >
                             </v-carousel-item>
@@ -102,8 +105,8 @@ h2 {
 .presentation_text_div {
     text-align: center;
     color: black;
-    padding-left: 10%;
-    padding-right: 10%
+    padding-left: 20%;
+    padding-right: 20%
 }
 
 .div_carousel {
@@ -118,6 +121,11 @@ h2 {
 
 .v-carousel {
     cursor: pointer;
+}
+
+.v-carousel-item {
+    height: auto;
+    max-height: 80%
 }
 
 /* media queries for tablets */

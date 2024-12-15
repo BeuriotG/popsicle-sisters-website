@@ -31,7 +31,7 @@ const prestations = [
                     <v-sheet >
 
                             <div v-for="(prestation, index) in prestations" :key="index" class="prestation-section">
-                                <h3>{{ prestation.titre }}</h3>
+                                <h2>{{ prestation.titre }}</h2>
                                 <p class="text-center">{{ prestation.description }}</p>
                             </div>
                         
@@ -60,6 +60,10 @@ const prestations = [
 
 h1 {
     text-align: center;
+}
+
+p{
+    font-size: 1.5em;
 }
 
 .text-center{

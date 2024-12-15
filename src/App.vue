@@ -57,6 +57,7 @@ html {
 
 h1,
 h2,
+h3,
 button {
   font-family: "Cinzel Decorative", serif;
 }
