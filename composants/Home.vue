@@ -45,7 +45,7 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
 
 
                         <h2>{{h2.carousel}}</h2>
-                            <v-carousel hide-delimiter-background :show-arrows="false" cycle >
+                            <v-carousel hide-delimiters :show-arrows="false" cycle >
                             
                             <v-carousel-item   
                                             @click="goPresta"
