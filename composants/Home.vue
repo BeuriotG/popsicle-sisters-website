@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { VCardItem } from 'vuetify/lib/components/index.mjs';
 
 
 const emits = defineEmits(['changeScreen'])
@@ -29,7 +28,7 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
             <v-col>
                  <div class="rounded-image">
     <v-img
-    src="/src/components/img/trio_accueil.jpg"
+    src="/img/trio_accueil.webp"
     max-height="800px">
     </v-img>
                 </div>
@@ -49,21 +48,21 @@ const paragraphPresentation = "Nous sommes les Popsicle Sisters, un trio vocal s
                             
                             <v-carousel-item   
                                             @click="goPresta"
-                                            src="/src/components/img/Lien_Presta.png" 
+                                            src="/img/Lien_Presta.webp" 
                                             contain
                                             >
                             </v-carousel-item>
 
                             <v-carousel-item
                                             @click="goGallery"
-                                             src="/src/components/img/Lien_Galerie.png" 
+                                             src="/img/Lien_Galerie.webp" 
                                             contain
                                            >
                             </v-carousel-item>
 
                             <v-carousel-item
                                             @click="goContact"
-                                            src="/src/components/img/Lien_Contact.png" 
+                                            src="/img/Lien_Contact.webp" 
                                             contain
                                             >
                             </v-carousel-item>

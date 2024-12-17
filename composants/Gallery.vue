@@ -2,32 +2,32 @@
 
 const photos = [
 {
-    link: "/src/components/img/Galerie7.jpg",
+    link: "/img/Galerie7.webp",
     cols: "4"
   },
   {
-    link: "/src/components/img/Galerie5.jpg",
+    link: "/img/Galerie5.webp",
     cols: "6"
   },  
   {
-    link: "/src/components/img/Galerie4.jpg",
+    link: "/img/Galerie4.webp",
     cols: "6"
   },  
   {
-    link: "/src/components/img/Galerie2.jpg",
+    link: "/img/Galerie2.webp",
     cols: "4"
   },  
   {
-    link: "/src/components/img/Galerie3.jpg",
+    link: "/img/Galerie3.webp",
     cols: "4"
   },  
   {
-    link: "/src/components/img/Galerie6.jpg",
+    link: "/img/Galerie6.webp",
     cols: "3"
   },  
 
   {
-    link: "/src/components/img/Galerie1.jpg",
+    link: "/img/Galerie1.webp",
     cols: "4"
   }
 ]

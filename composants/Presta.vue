@@ -20,7 +20,7 @@ const prestations = [
         <v-col class="col-1">
             <div class="container-1">
                 <v-img
-                src="/src/components/img/Prestations1.jpg"
+                src="/img/Prestations1.webp"
                 max-height="400px">
                 </v-img>
             </div>
@@ -42,7 +42,7 @@ const prestations = [
         <v-col class="col-3">
             <div class="container-3">
                 <v-img
-                src="/src/components/img/Prestations Noel.jpg"
+                src="/img/Prestations-Noel.webp"
                 height="400px"
                 width="300px"
                 cover

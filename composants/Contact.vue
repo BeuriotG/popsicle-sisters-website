@@ -24,7 +24,7 @@ const p = {
             <v-col>
                 <div class="container">
                     <v-img
-                    src="/src/components/img/Contact.jpg"
+                    src="/img/Contact.webp"
                     max-height="700px"
                     >
                     </v-img>
@@ -38,19 +38,19 @@ const p = {
                         <v-col>
                             <v-sheet >
                                 <div class="align-left">
-                                    <p><img src="/src/components/icons/gmail.png"
+                                    <p><img src="/icons/gmail.png"
                                     alt="" width="">
                                         {{p.mail}}
                                     </p>
                                     <p>
-                                    <img src="/src/components/icons/instagram.png"
+                                    <img src="/icons/instagram.png"
                                     alt="" width="25px">
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/popsicle_sisters/">
                                             Instagram </a>
                                     </p>
                                     <p>
                                     <img
-                                        src="/src/components/icons/youtube.png"
+                                        src="/icons/youtube.png"
                                         alt="" width="25px">
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@PopsicleSisters">  Youtube</a> 
                                     </p> 

@@ -20,7 +20,7 @@ function handleChangeScreen (screen: string){
 
   <v-app>
     <v-main>
-      <img src="/src/components/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo"></img>
+      <img src="/icons/Black and White Minimalist Professional Initial Logo 3.png" alt="" class="icon_logo"></img>
       
 
       <v-toolbar
